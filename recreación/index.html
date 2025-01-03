@@ -1,0 +1,95 @@
+<!-- 
+ *¿Qué elementos están dentro del <header>, <main> y <footer>?*
+Dentro del Header se encuentra todo el encabezado  de la pagina con imagen de fondo y la informacion inciial
+Dentro del main se estan encontrando las secciones que incluyen botones y formulario. Se encuentra la informacion principal del body 
+footer es el pie de pagina donde se suele colocar la informacion de derechos de la pagina
+
+*¿Qué clases o identificadores están siendo utilizados en el CSS?*
+
+Se estan usando class y span para identificar la palabra a la que se le aplicara cambio de color
+Se estan usando ids para las secciones, botones y seccion forumulario 
+Se usa etiqueta label para los inputs de formularios 
+
+
+*¿Cómo se estilizan los diferentes elementos de la landing page?*
+
+Se estilizan desde CSS llamando a las clases y ids 
+Asi como se aplico desde el CSS toda la imagen del Header y sus ajustes de diseño 
+
+*Si hay animaciones o interacciones, ¿cómo se implementan con JavaScript?*
+Hay animaciones a traves de las funciones para los botones 
+
+
+
+
+
+
+-->
+
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>Recreación página</title>
+
+</head>
+
+<body>
+    <header> 
+        <!-- //todo el diseño del header se aplica directamnete en el CSS  ya que es imagen decorativa/fondo 
+         y no parte del contenido. Desde ahi se aplica todo el ajuste de diseño a la imagen
+         -->
+    </header>
+    
+    <!-- primera seccion para crear el boton que lleve al formulario -->
+    <section id="unirte">
+    <h1>¡Full Stack <span class="azul">Developers!</span></h1> 
+    <!-- con span separamos la plabra para aplicarle una propiedad solo a ella. En este caso color -->
+    <h2>Únete a nuestro equipo</h2>
+    <p>La comunidad de desarrolladores Full Stack Developers!</p>
+    <button id="sabermas">¡Quiero saber más!</button>
+    </section>
+
+    <!-- sección formulario para tomar datoss-->
+    <section id="formulario"> 
+        <h2>Contáctanos para obtener más información sobre nuestra comunidad</h2>
+        <br>
+        </br>
+
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido"  required>
+  
+           <!-- <input> en el formulario permite al usuario ingresar texto. Se aplica por cada label de formulario
+           type: tipo de dato que va a tomar del usuario. Texto en este caso
+           id: el nombre id para referenciar en archivo css o js
+           name:  es la clave en el par clave:valor cuando se envían los datos del formulario.
+           placeholder= atributo para texto guía  -->
+         
+
+          <label for="correo">Correo electrónico:</label>
+          <input type="email" id="correo" name="correo" placeholder="Mail personal"   required>
+          <!-- type: email en este caso por ser el tipo de dato que va a tomar
+           Required: porque son campos  que se deben llenar -->
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje"  placeholder="Qué te motiva?" required></textarea>
+           <!--textarea: se usa cuando necesitas un área de texto más grande-->
+
+          <button id="button" onclick="presionarBoton()">Enviar</button>
+
+          <!-- Boton para enviar datos ingresar del formulario con onclick para interactuar desde JS -->
+        </form>
+        </section>
+        
+    <footer>
+    <!-- pie de pagina con copyright y link al copyright -->
+    <p>&copy; 2024 FullStack Developers. Todos los derechos reservados.</p>
+    </footer>
+   
+    <script src="proyecto.js"></script>
+        
+</html>
+</body>
+
+

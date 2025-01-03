@@ -1,0 +1,89 @@
+body {
+    font-family: Cambria, arial;
+    margin: 0;
+    }
+    /* margin: 0 para que todo el contenido cubra completo la pagina */
+
+    header{
+    padding: 50px ;
+    background-image: url('https://res.cloudinary.com/dh6ipg8bj/image/upload/v1735820476/Purple_and_White_Modern_Computer_Class_Google_Classroom_Header_ziwi71.png');
+    background-size: cover;
+    height: 150px;
+    }
+
+     #unirte h1 {
+    font-size: 70px;
+    margin: 0;
+    margin-top: 10px;
+    text-shadow: 3px 3px 3px  #00000072;
+    }
+    #unirte h1 span {
+        color: #371d86;
+    }
+    /* para ingresar al span primero se entra al id de la seccion, luego el h1 y finalemte span  */
+    section {
+        padding: 50px 20px;
+        text-align: center;
+      }
+
+      
+    #sabermas {
+        padding: 20px 30px;
+        font-size: 1em;
+        background-color: #481ec6;
+        color: #fff;
+        border: none;
+        cursor: grab;
+    }
+    section#formulario {
+        background-color: #481ec6;
+        color : #fff;
+      }
+    
+      form {
+        margin: 0 auto;
+        max-width: 300px;
+        text-align: left;
+        margin-bottom: 100px;
+    
+      }
+      /* display block: empuja a los elementos siguientes hacia abajo y crea  bloque" de contenido*/
+      form label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      form input,
+      form textarea {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        
+      }
+
+      form button {
+        width: 50%;
+        margin-left: 25%;
+        padding: 5px 10px;
+        font-size: 1em;
+        background-color: #ffffff;
+        color: #481ec6;
+        cursor: pointer;
+        border-radius: 2px;
+      }
+      /* border-radies: para redondear bordes  */
+      footer {
+        text-align: center;
+        background-color: #616161;
+        color: #fff;
+        padding: 9px ;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+
+    
+    
+    
+
+ 
